@@ -41,7 +41,12 @@ public function behaviors()
 
 public function getBooks()
 {
-    return $this->hasMany(BookModel::className(), ['id' => 'book_id']);
+    return $this->hasMany(BookModel::className(), ['id' => 'book_id'])->via('authorBooks');
+}
+
+public function getAuthorBooks()
+{
+    return $this->hasMany(AuthorBooks::className(), ['author_id' => 'id']);
 }
 ...
 ```
