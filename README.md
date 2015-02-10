@@ -16,3 +16,32 @@ or add
 ```
 
 to the ```require``` section of your `composer.json` file.
+
+## Usage
+
+### In MyModel.php
+
+```php
+...
+use diiimonn\behaviors\RelationFollowBehavior;
+...
+
+public function behaviors()
+{
+    return [
+        ...
+        [
+            'class' => RelationFollowBehavior::className(),
+            'relations' => [
+                'books', // relation name
+            ]
+        ],
+    ];
+}
+
+public function getBooks()
+{
+    return $this->hasMany(BookModel::className(), ['id' => 'book_id']);
+}
+...
+```
