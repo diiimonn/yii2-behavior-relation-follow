@@ -19,7 +19,7 @@ to the ```require``` section of your `composer.json` file.
 
 ## Usage
 
-### In MyModel.php
+### in MyModel.php
 
 ```php
 ...
@@ -45,3 +45,6 @@ public function getBooks()
 }
 ...
 ```
+
+### in my-view/_form.php
+Select multiple from relation model. Recommended use [yii2-widget-checkbox-multiple](https://github.com/diiimonn/yii2-widget-checkbox-multiple)
