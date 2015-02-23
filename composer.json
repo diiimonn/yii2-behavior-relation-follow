@@ -4,6 +4,8 @@
     "keywords": ["behavior", "relation", "yii2", "extension"],
     "homepage": "https://github.com/diiimonn/yii2-behavior-relation-follow",
     "type": "yii2-extension",
+    "minimum-stability": "dev",
+    "version": "v1.0.0",
     "authors": [
         {
             "name": "Dmitriy Gavrilenko",
